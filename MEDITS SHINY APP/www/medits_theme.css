@@ -1,0 +1,134 @@
+:root{--medits-ink:#183147;--medits-muted:#62798a;--medits-teal:#087f87;--medits-teal-dark:#075e69;--medits-accent:#dff2f0;--medits-bg:#f3f7f9;--medits-line:#e0e9ee}
+body{background:var(--medits-bg);color:var(--medits-ink);font-family:'Segoe UI',Arial,Helvetica,sans-serif}
+.container-fluid{max-width:1900px;margin:auto;padding:18px 24px}
+.medits-hero{background:linear-gradient(116deg,#123448,#116c77);border-radius:18px;padding:25px 30px;margin-bottom:22px;color:#fff;box-shadow:0 15px 34px rgba(18,52,72,.16)}
+.medits-hero .eyebrow{letter-spacing:.14em;text-transform:uppercase;font-size:11px;font-weight:800;color:#bce3e3;margin-bottom:7px}
+.medits-hero h1{margin:0 0 6px;color:white;font-size:28px;line-height:1.25;font-weight:750}
+.medits-hero p{margin:0;color:#d5eaed;font-size:13px;max-width:900px}
+.well{background:white;border:1px solid var(--medits-line);border-radius:15px;box-shadow:0 8px 22px rgba(30,61,75,.05);padding:21px}
+.medits-sidebar-title{font-size:12px;font-weight:800;letter-spacing:.09em;color:var(--medits-teal-dark);text-transform:uppercase;margin:14px 0 11px}
+.medits-sidebar-note{font-size:12px;color:var(--medits-muted);line-height:1.55;margin:10px 0 15px}
+.medits-mini-status{background:#edf6f7;border:1px solid #cde5e5;padding:12px;border-radius:10px;font-size:12px;color:#285b62;white-space:pre-wrap;overflow-wrap:anywhere}
+.form-control{border-color:#d2e1e7;border-radius:8px;box-shadow:none;min-height:36px}
+.form-control:focus{border-color:var(--medits-teal);box-shadow:0 0 0 3px rgba(8,127,135,.12)}
+.control-label{font-size:12px;color:#3b5566;font-weight:700;margin-bottom:5px}
+.btn{border-radius:9px;font-weight:650;box-shadow:none!important;transition:background-color .15s,transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background-color:var(--medits-teal);border-color:var(--medits-teal)}
+.btn-primary:hover,.btn-primary:focus{background-color:#096871;border-color:#096871}
+.btn-default{border-color:#cde0e5;background:#fff;color:#28606a}
+.main-panel{min-width:0}
+.nav-tabs{display:flex;flex-wrap:wrap;gap:5px;border-bottom:1px solid #dce8ec;margin-bottom:20px;padding-bottom:7px}
+.nav-tabs>li>a{color:#526d7a;font-size:12px;font-weight:700;padding:9px 12px;border-radius:9px;border:0!important;margin-right:0}
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus{background:var(--medits-teal)!important;color:#fff!important}
+.nav-tabs>li>a:hover{background:#e3f0f2;color:#16495a}
+.tab-content{background:#fff;border:1px solid var(--medits-line);padding:20px 22px;border-radius:14px;min-height:370px;box-shadow:0 8px 24px rgba(23,57,72,.04)}
+.tab-content h3,.tab-content h4{color:#153a4b;font-weight:750}
+.medits-page-title{font-size:24px;font-weight:780;color:#17394b;margin:0 0 8px}
+.medits-page-subtitle{font-size:13px;color:var(--medits-muted);line-height:1.6;margin-bottom:22px}
+.medits-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0 24px}
+.medits-kpi{border:1px solid var(--medits-line);border-radius:13px;padding:15px;background:#fbfdfd}
+.medits-kpi .value{font-size:28px;font-weight:800;line-height:1.1;color:#126b76;font-variant-numeric:tabular-nums}
+.medits-kpi .label{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:#637987;margin-top:8px;font-weight:750}
+.medits-qc-panel{background:#f8fbfc;border:1px solid #dce9ed;border-radius:12px;padding:16px 18px;margin:18px 0}
+.medits-qc-panel .panel-title{font-weight:800;color:#194559;font-size:15px;margin-bottom:12px}
+.medits-row{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end}
+.medits-row>.shiny-input-container{flex:1;min-width:175px;max-width:310px}
+.medits-row .shiny-input-container{margin-bottom:6px}
+.medits-action-row{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 20px}
+.medits-hint{background:#ecf7f4;border-left:4px solid #0b9295;border-radius:6px;padding:12px 14px;font-size:12px;color:#3f6170;margin:13px 0}
+.medits-brief{font-size:12px;color:#4c6573;line-height:1.6}
+.table{font-size:12px}
+.table>thead>tr>th{background:#eef5f6;border-bottom:1px solid #cbdfe4;color:#244d5a;font-weight:800}
+.table>tbody>tr>td{border-color:#eef3f5}
+.shiny-plot-output{border-radius:11px;overflow:hidden;max-width:100%}
+hr{border-color:#e6edf0}
+@media(max-width:767px){.container-fluid{padding:12px}.medits-hero{padding:18px}.medits-hero h1{font-size:22px}.tab-content{padding:13px}.well{padding:14px}}
+
+/* MEDITS v5: clearer navigation, readable buttons and status. */
+.medits-hero{padding:27px 32px;background:linear-gradient(112deg,#0b3044,#0f6170 68%,#168e88);border-radius:16px}
+.medits-hero h1{font-size:30px;letter-spacing:-.022em}
+.well{position:sticky;top:12px;max-height:calc(100vh - 26px);overflow-y:auto;scrollbar-width:thin}
+.medits-full-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;white-space:normal;line-height:1.35;min-height:44px;margin:8px 0;padding:10px 12px;text-align:center}
+.medits-full-btn .glyphicon{flex-shrink:0}
+.medits-run-btn{min-height:52px;font-size:15px;background:#0a777e;border-color:#0a777e;color:white}
+.medits-mini-status{line-height:1.5;font-size:12px;white-space:normal;overflow-wrap:break-word;display:flex;align-items:flex-start;gap:9px}
+.medits-mini-status .shiny-text-output{flex:1;min-width:0;display:block;white-space:normal;overflow-wrap:anywhere}
+.medits-status-dot{background:#0a8b84;width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:6px}
+.medits-section-top{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:20px}
+.medits-section-top h3{margin:4px 0 7px;font-size:22px}
+.medits-section-top p{color:#5c7282;max-width:740px;line-height:1.5;font-size:13px}
+.medits-kicker{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#0f7a86;font-weight:800}
+.medits-info-note{background:#f1f7fa;border:1px solid #dce9ee;border-radius:9px;padding:12px 15px;font-size:12px;color:#466172;margin:15px 0}
+.medits-modal-heading{font-weight:750;font-size:17px;color:#17394b}
+.modal-dialog.modal-lg{width:min(96%,1120px)}
+.modal-body{max-height:75vh;overflow-y:auto;padding:22px}
+.modal-body .nav-tabs>li>a{font-size:13px}
+.modal-body .tab-content{padding:16px;min-height:240px;box-shadow:none}
+.nav-tabs{gap:6px;row-gap:6px}
+.nav-tabs>li>a{font-size:12px;line-height:1.3}
+.tab-content{min-height:350px}
+@media(max-width:1100px){.well{position:static;max-height:none}.medits-hero h1{font-size:25px}}
+@media(max-width:767px){.medits-section-top{display:block}.modal-dialog.modal-lg{width:auto}.modal-body{padding:12px}}
+
+
+/* v6 ocean + sustainability refresh */
+:root{--medits-ink:#163546;--medits-muted:#5f7583;--medits-teal:#0b7a75;--medits-teal-dark:#095a63;--medits-accent:#e5f5ef;--medits-bg:#eef6f7;--medits-line:#d9e7ea;--medits-sand:#f8fbf8;--medits-green:#5ea57a}
+body{background:linear-gradient(180deg,#eef6f7 0%,#f7fbf9 100%)}
+.medits-hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#0c3248 0%,#0e6b74 55%,#4e9e7b 100%);box-shadow:0 16px 38px rgba(15,73,86,.18)}
+.medits-hero:before{content:'';position:absolute;inset:auto -5% -45px -5%;height:110px;background:radial-gradient(120% 95px at 50% 0%,rgba(255,255,255,.18) 0%,rgba(255,255,255,.08) 42%,rgba(255,255,255,0) 43%);pointer-events:none}
+.medits-hero:after{content:'';position:absolute;right:26px;top:18px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.17),rgba(255,255,255,0) 70%)}
+.medits-hero p{font-size:14px;line-height:1.55;max-width:980px}
+.well{background:linear-gradient(180deg,#ffffff 0%,#f9fcfc 100%);border:1px solid #dbe8eb}
+.medits-sidebar-title{color:#0d6d76}
+.control-label{font-size:12px;color:#355666;font-weight:700}
+.btn-primary{background:linear-gradient(180deg,#0b837f,#0a6f72);border-color:#0a7677}
+.btn-default{background:#fdfefe;border-color:#d4e4e8;color:#235a64}
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus{background:linear-gradient(180deg,#0c7f84,#0d676d)!important}
+.tab-content{background:linear-gradient(180deg,#ffffff 0%,#fbfdfd 100%)}
+.medits-kpi{background:linear-gradient(180deg,#ffffff 0%,#f6fbf9 100%);border-color:#dbe8e2}
+.medits-kpi .value{color:#0d7277}
+.medits-hint,.medits-info-note{background:#f2faf7;border-color:#d6ebe0}
+.medits-run-btn{font-size:16px;font-weight:750;letter-spacing:.01em}
+.medits-page-title,.tab-content h3,.tab-content h4{letter-spacing:-.01em}
+
+/* MEDITS Ocean v7: streamlined three-section dashboard */
+:root{--sea-deep:#092f46;--sea-mid:#116d77;--sea-bright:#17a39a;--sea-grass:#72b690;--sea-foam:#e9f7f3;--sea-sand:#fafcf9}
+body{background:radial-gradient(1200px 520px at 2% 2%,#dfeef2 0%,transparent 72%),linear-gradient(180deg,#f0f7f8,#f9fcfa 70%);color:#173a4a}
+.container-fluid{max-width:1920px;padding:20px 28px}
+.medits-hero{background:linear-gradient(116deg,#082c44 1%,#0b5f70 51%,#2e938a 82%,#6bad85 100%);padding:31px 40px 32px;border-radius:20px;border:1px solid rgba(255,255,255,.18);box-shadow:0 20px 44px rgba(12,66,83,.18);margin-bottom:24px}
+.medits-hero .eyebrow{color:#c3ebdb;font-size:11px;letter-spacing:.17em;display:flex;align-items:center;gap:8px}
+.medits-hero h1{font-size:32px;letter-spacing:-.035em}
+.medits-hero p{color:#e2f3f0;line-height:1.64;font-size:14px;max-width:850px}
+.medits-hero .glyphicon{font-size:14px;color:#cbf1df}
+.well{border:1px solid #d8e7e8;border-radius:17px;background:#ffffff;box-shadow:0 10px 32px rgba(15,66,77,.055);padding:23px;top:20px;max-height:calc(100vh - 44px)}
+.form-control{border-color:#cedee2}
+.medits-sidebar-title{font-size:11px;color:#136e73;letter-spacing:.12em;margin-top:20px}
+.medits-sidebar-note{padding:8px 10px;background:#edf7f3;border-left:3px solid #44a78e;border-radius:4px;color:#527481}
+.medits-run-btn{background:linear-gradient(125deg,#0b8082,#117d68);color:#fff;border:none;box-shadow:0 8px 22px rgba(11,122,119,.13)!important}
+.medits-run-btn:hover{background:linear-gradient(125deg,#0b727b,#0d6b60)}
+.medits-mini-status{background:#f0f9f5;border:1px solid #d8ece2;border-radius:10px}
+.medits-status-dot{background:#4eac78;box-shadow:0 0 0 3px rgba(78,172,120,.12)}
+/* Main navigation is a three-part information architecture */
+.nav-tabs{display:flex;flex-wrap:wrap;align-items:center;gap:7px;border-bottom:1px solid #dbe8e8;padding-bottom:10px;margin-bottom:19px}
+.nav-tabs>li>a{border-radius:11px!important;padding:12px 19px;font-size:13px;letter-spacing:.004em;color:#3e6471}
+.nav-tabs>li.active>a{background:linear-gradient(120deg,#0c6976,#0e8279)!important;box-shadow:0 6px 16px rgba(12,105,118,.15)}
+.nav-tabs>li>a .fa{margin-right:6px}
+.tab-content{border-radius:16px;padding:20px 23px;box-shadow:0 9px 26px rgba(20,70,80,.035)}
+.medits-group-header{background:linear-gradient(100deg,#f2faf9,#f5fbf7);border:1px solid #dbeee9;border-radius:13px;padding:17px 22px;margin:0 0 20px}
+.medits-group-header .medits-kicker{font-size:10px;letter-spacing:.17em;color:#2d9182;font-weight:800}
+.medits-group-header h2{font-size:22px;letter-spacing:-.025em;color:#143e4f;margin:6px 0 5px;font-weight:780}
+.medits-group-header p{font-size:13px;color:#587480;line-height:1.6;max-width:850px;margin:0}
+/* Second level is a quiet set of pills, not another overwhelming row of tabs */
+.nav-pills{display:flex;flex-wrap:wrap;gap:6px;padding-bottom:16px;border-bottom:1px solid #e5eeee;margin-bottom:21px}
+.nav-pills>li{float:none;margin:0!important}
+.nav-pills>li>a{padding:9px 13px;border-radius:9px;color:#32606d;background:#f0f6f7;font-size:12px;font-weight:700;transition:all .16s;border:1px solid #e2edef}
+.nav-pills>li>a:hover{background:#e3f1f0;color:#0d5d69}
+.nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus{background:#e5f5ef;color:#0c6a66;border-color:#addfd0}
+.tab-content .tab-content{border:0;padding:2px 0 16px;box-shadow:none;background:transparent;min-height:300px}
+.shiny-plot-output{border:1px solid #e1ecec;background:#fff;border-radius:13px}
+.modal-content{border-radius:17px;overflow:hidden;border:1px solid #d7e9e6;box-shadow:0 22px 80px rgba(7,53,68,.26)}
+.modal-header{background:linear-gradient(120deg,#eff8f6,#f7fbf9);border-bottom:1px solid #e0ece7}
+.modal-footer{border-top:1px solid #e3eceb;background:#fbfdfc}
+@media(max-width:1200px){.well{position:static;max-height:none}.container-fluid{padding:14px}.medits-hero{padding:24px 27px}}
+@media(max-width:767px){.medits-hero h1{font-size:25px}.medits-group-header{padding:14px}.medits-group-header h2{font-size:19px}.tab-content{padding:13px}}
