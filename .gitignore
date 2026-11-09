@@ -1,6 +1,9 @@
 # Survey and external data
 *.csv
 !MEDITS SHINY APP/AGE_READINGS_TEMPLATE.csv
+!MEDITS SHINY APP/MEDITS_Strata.csv
+!MEDITS SHINY APP/Sp_Medits.csv
+!MEDITS SHINY APP/ASFIS_2020.csv
 *.xlsx
 *.xls
 *.mdb
