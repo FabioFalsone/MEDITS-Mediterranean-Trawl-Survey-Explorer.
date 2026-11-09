@@ -1,0 +1,30 @@
+# Survey and external data
+*.csv
+!MEDITS SHINY APP/AGE_READINGS_TEMPLATE.csv
+*.xlsx
+*.xls
+*.mdb
+*.accdb
+*.rds
+*.RData
+*.rda
+# Outputs
+*.zip
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.html
+*.log
+.Rhistory
+.Rproj.user/
+.RData
+**/outputs/
+**/output/
+**/results/
+**/RESULTS/
+**/RISULTATI_VERIFICATI/
+**/www/*.png
+.DS_Store
