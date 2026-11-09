@@ -9,7 +9,7 @@ The application is located in **[`MEDITS SHINY APP/`](MEDITS%20SHINY%20APP/)**.
 ### Run locally
 
 1. Install R and the packages imported by the R scripts (including FLR dependencies where required).
-2. Supply the lookup files specified by the application locally; do not commit third-party survey data.
+2. The application includes three required reference CSV files in `MEDITS SHINY APP/`: `MEDITS_Strata.csv` (stratification), `Sp_Medits.csv` (MEDITS species catalogue), and `ASFIS_2020.csv` (FAO 3-alpha species codes). Keep them next to the R scripts. Do not upload TA/TB/TC sampling datasets to this public repository.
 3. In RStudio, open `MEDITS SHINY APP/Medits_app_GSA.R` or run:
 
 ```r
